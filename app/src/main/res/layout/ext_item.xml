@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/itembg" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/e1" />
+
+    <TextView
+        android:id="@+id/multipTV"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:background="@drawable/moneybg"
+        android:gravity="center"
+        android:text="@string/x"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/arrow"
+        app:layout_constraintTop_toTopOf="@+id/arrow" />
+
+    <TextView
+        android:id="@+id/costTV"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tvbg"
+        android:gravity="center"
+        android:text="@string/dollar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/arrow" />
+</androidx.constraintlayout.widget.ConstraintLayout>
